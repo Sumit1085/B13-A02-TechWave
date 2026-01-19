@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body>
-    hello world
+    <header>
+        <div class="header-container flex justify-around items-center max-w-7xl mx-auto">
+            <div class="header-logo">
+               <h2 class="text-4xl text-white">Tech<span>Wave</span></h2>
+            </div>
+            <div class="header-menu flex gap-8">
+                <a href="">About</a>
+                <a href="">Episodes</a>
+                <a href="">Host</a>
+            </div>
+            <div class="primary-btn"><button>Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="banner-container flex flex-col items-center text-center">
+            <div class="img flex">
+                <img class="bg2" src="./assets/hero-circle.png" alt="">
+                <span>NEW</span>
+            </div>
+            <div class="banner-text">
+                <h1 class="mt-10 text-6xl font-bold">TachWave</h1>
+                <p class="mt-2 text-base">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <div class="banner-button mt-6">
+                    <button class="banner-button-primary "><i class="fa-brands fa-spotify"></i> Listen on spotify</button>
+                    <button  class="banner-button-secondary ml-2">Subscribe <i class="fa-regular fa-envelope"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
