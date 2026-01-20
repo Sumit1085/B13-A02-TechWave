@@ -14,8 +14,8 @@ header,.header-container{
 .header-logo span{
     font-weight: 700;
     background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .primary-btn{
@@ -55,8 +55,9 @@ header,.header-container{
    width: 50px;
    height: 22px;
    border-radius: 1000px;
+    box-shadow: 0 0 0 0 #00FF88 50%, 0 6px 20px 0 #00FF88 100%;
+
    color: black;
-   /* box-shadow: 0 4px 8px 0 #00FF88, 0 6px 20px 0 #00FF88; */
    transition: box-shadow 0 0 3s;
 }
 .banner-container img:hover .img span{
@@ -72,15 +73,22 @@ header,.header-container{
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
+     transition: background 3s 0 0.5s ;
+}
+.banner-button-primary:hover{
+    background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
 }
 .banner-button .banner-button-secondary{
    color: #00FF88;
    width: 185px;
     height: 45px;
-    border: 2px solid #00FF88;
+    border: 2px solid #03bf67;
     border-radius: 100000px;
     cursor: pointer;
-
+    transition: border 3s 0 0.5s;
+}
+.banner-button .banner-button-secondary:hover{
+    border: 3px solid #00ff88;
 }
 /* About  */
 .about-section{
@@ -185,6 +193,11 @@ hr{
     .banner-text h1{
         font-size: 50px;
     }
+    .banner-container .img span {
+        position: absolute ;
+        left: 75%;  
+
+}
     .about-section{
         background-color: #1A0B2E;
         padding: 40px 15px 0 15px;
