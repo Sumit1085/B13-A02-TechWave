@@ -90,8 +90,77 @@ hr{
     background-color: #230E3D;
     padding: 50px 200px;
 }
+.choose-container .choose-cards .choose-card img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
 .choose-container .choose-cards .choose-card{
+    /* width: 400px; */
+    padding: 20px 40px;
+    border-radius: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    
 
+}
+.choose-container .choose-cards{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+  
+}
+
+/* Feature Section */
+
+.feature-container{
+    background-color: #1A0B2E;
+    padding: 120px 200px;
+}
+.feature-container .feature-card{
+    width: 33.3%;
+    background-color: #250D44;
+    border-radius: 20px;
+   
+    
+}
+.feature-container .feature-card iframe{
+    width: 100%;
+    border-radius: 8px;
+}
+.feature-container .feature-card .feature-vdo-info{
+    padding: 24px;
+}
+
+/* Host Card */
+.host-container{
+    background-color: #1A0B2E;
+    padding: 0 100px 200px;
+}
+.host-container .host-card{
+    background-color: #351165;
+}
+.host-card-info p{
+    color: #A9A9A9;
+}
+.host-card-info .host-card-icons{
+    width: 20px;
+}
+/* Footer */
+.footer-container{
+    background-image: url(./assets/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 412px;
+}
+
+.footer-container h1 span{
+    font-weight: 700;
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer-container h1 {
+    font-size: 90px;
 }
 /* Responsive design */
 @media screen and (max-width:576px) {
@@ -101,8 +170,21 @@ hr{
     .header-container .primary-btn{
         display: none;
     }
-
-
+    .choose-container{
+        padding: 40px 20px;
+    }
+    .choose-container h1{
+        margin-top: 40px;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .choose-container .choose-cards {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+    .choose-container .choose-cards .choose-card{
+    margin-bottom: 16px;
+}
 }
 @media screen and (min-width:580px) {
     header .header-menu .hamburger{
