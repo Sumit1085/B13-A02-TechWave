@@ -3,6 +3,9 @@ body{
     font-family: "Open Sans", sans-serif;
     color: white;
 }
+.secondary-color{
+    color: #A9A9A9;
+}
 header,.header-container{
     background-color: #412567;
     height: 92px;
@@ -24,6 +27,10 @@ header,.header-container{
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
+    transition: background 3s 0 0.5s ;
+}
+.primary-btn:hover{
+    background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
 }
 /* Banner section */
 .banner-container{
@@ -36,6 +43,7 @@ header,.header-container{
 .banner-container img{
     position: relative;
 }
+
 .banner-container .img .bg2 {
     margin-top: 100px;
 }
@@ -48,7 +56,11 @@ header,.header-container{
    height: 22px;
    border-radius: 1000px;
    color: black;
-   box-shadow: 0 4px 8px 0 #00FF88, 0 6px 20px 0 #00FF88;
+   /* box-shadow: 0 4px 8px 0 #00FF88, 0 6px 20px 0 #00FF88; */
+   transition: box-shadow 0 0 3s;
+}
+.banner-container img:hover .img span{
+    box-shadow: 0 4px 8px 0 #00FF88 50%, 0 6px 20px 0 #00FF88 100%;
 }
 .banner-button .banner-button-primary{
     height: 44px;
@@ -152,6 +164,9 @@ hr{
     background-size: cover;
     height: 412px;
 }
+.footer-container .footer-icons{
+    cursor: pointer;
+}
 
 .footer-container h1 span{
     font-weight: 700;
@@ -163,14 +178,99 @@ hr{
     font-size: 90px;
 }
 /* Responsive design */
-@media screen and (max-width:576px) {
+@media screen and (min-width:320px) and (max-width: 576px) {
+    .banner .banner-button .banner-button-primary{
+        margin-bottom: 20px;
+    }
+    .banner-text h1{
+        font-size: 50px;
+    }
+    .about-section{
+        background-color: #1A0B2E;
+        padding: 40px 15px 0 15px;
+}
+    .about-section h1{
+        font-size: 30px;
+        margin-bottom: 16px;
+}
+    .choose-container{
+        background-color: #1A0B2E;
+        padding: 40px 15px 0 15px;
+        margin: 0;
+}
+    .feature-container {
+        padding: 40px 15px;
+}
+    .feature-container h1{
+        font-size: 30px;
+    }
+    .feature-card-container {
+        flex-direction: column;
+}
+    .feature-card-container .feature-card{
+     width: 100%;
+}
+    .host-container {
+         padding: 0 15px 15px;
+}
+.host-container .host-card {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}   
+.host-container h1 {
+  font-size: 32px;
+} 
+    .choose-container h1{
+        font-size: 25px;
+    }
+    .choose-container .choose-cards {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.about-numbers .number-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
     header .header-menu .links{
         display: none;
     }
     .header-container .primary-btn{
         display: none;
     }
-    .choose-container{
+
+
+.footer-container h1{
+    font-size: 50px;
+  
+}
+.footer-container .footer-icons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px;
+}
+.footer-container p{
+    text-align: center;
+}
+}
+@media screen and (min-width:576px) {
+    header .header-menu .hamburger{
+        display: none;
+    }
+  
+}
+@media screen and (min-width:577px) and (max-width:1100px) {
+        .about-section{
+        padding: 50px;
+}
+
+.about-numbers .number-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+      .choose-container{
         padding: 40px 20px;
     }
     .choose-container h1{
@@ -185,22 +285,28 @@ hr{
     .choose-container .choose-cards .choose-card{
     margin-bottom: 16px;
 }
-}
-@media screen and (min-width:580px) {
-    header .header-menu .hamburger{
-        display: none;
-    }
-  
-}
-@media screen and (min-width:572px) and (max-width:1100px) {
-        .about-section{
-        padding: 50px;
-}
 
-.about-numbers .number-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 40px;
+.feature-container {
+  background-color: #1A0B2E;
+  padding: 50px
 }
-  
+.feature-card-container {
+    flex-direction: column;
+}
+.feature-container .feature-card {
+  width: 100%;
+  background-color: #250D44;
+  border-radius: 20px;
+}
+.host-container .host-card {
+  flex-direction: column;
+  text-align: center;
+}
+.host-container .host-card-info h1{
+    margin-top: 16px;
+}
+.host-container .host-card-icons{
+    margin-top: 16px;
+    width: 100%;
+}
 }
