@@ -83,6 +83,16 @@ hr{
     margin-top: 80px;
     opacity: 0.1;
 }
+
+/* Choose COntainer */
+
+.choose-container{
+    background-color: #230E3D;
+    padding: 50px 200px;
+}
+.choose-container .choose-cards .choose-card{
+
+}
 /* Responsive design */
 @media screen and (max-width:576px) {
     header .header-menu .links{
